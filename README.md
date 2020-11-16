@@ -2,7 +2,7 @@
 
 Original paper: [Wasserstein Weisfeiler-Lehman Graph Kernels](https://proceedings.neurips.cc/paper/2019/hash/73fed7fd472e502d8908794430511f4d-Abstract.html) (NeurIPS 2019)
 
-The codes are adapted from the [the accompanying code](https://github.com/BorgwardtLab/WWL) for the above paper. Please follow the README of that repository to install the dependencies. 
+The codes are adapted from [the accompanying code](https://github.com/BorgwardtLab/WWL) for the above paper. Please follow the README of that repository to install the dependencies. 
 
 Changes are made as follows:
 
@@ -10,13 +10,13 @@ Changes are made as follows:
 
 2. `main.py` are modified to repeat cross-validation 10 times and report the average accuracy, similar to what the original paper did.
 
-3. Added an argument `--type`,  for users to choose whether run WWL
+3. Add an argument `--type`,  for users to choose whether run WWL
 discrete version (`discrete`), continuous version (`continuous`) or WWLsquare (`both`).
 
-|  | MUTAG | PTC-MR | NCI1 | PROTEINS | D&D | ENZYMES |
+|  | MUTAG | PTC_MR | NCI1 | PROTEINS | D&D | ENZYMES |
 |----|----|----|----|----|----|----|
 | WWL (from the paper) | 87.27±1.50 | 66.31±1.21 | 85.75±0.25 | 74.28±0.56 | 79.69±0.50 | 59.13±0.80 |
-| WWL (our implementation) | 87.81±1.46 | 65.69±1.32 | |74.89±0.68 | 79.38±0.39 | 58.28±1.07 |
+| WWL (our implementation) | 87.81±1.46 | 65.69±1.32 | 85.66±0.15 | 74.89±0.68 | 79.38±0.39 | 58.28±1.07 |
 
 
 |  | ENZYMES | PROTEINS(_full) | BZR | COX2 | BZR_MD | COX2_MD |
